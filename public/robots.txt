@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saas-auth-dashboard-demo.vercel.app/sitemap.xml
