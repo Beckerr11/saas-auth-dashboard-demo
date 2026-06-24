@@ -44,8 +44,8 @@ export default function AppLayout() {
           <Link className="brand-link public-brand-link" to="/login">
             <span className="brand-mark">DS</span>
             <span>
-              <strong>Auth Demo</strong>
-              <small>SaaS workspace</small>
+              <strong>Vitrine Técnica</strong>
+              <small>Engenharia de Produto</small>
             </span>
           </Link>
 
@@ -100,7 +100,7 @@ export default function AppLayout() {
             <Link className="brand-link sidebar-brand-link" to="/dashboard">
               <span className="brand-mark">DS</span>
               <span>
-                <strong>SaaS Auth Demo</strong>
+                <strong>Showcase Full Stack</strong>
                 <small>{getRoleLabel(user?.role)}</small>
               </span>
             </Link>

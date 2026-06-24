@@ -57,8 +57,8 @@ export default function Login() {
       footerActionTo="/register"
       footerText="Ainda nao tem acesso?"
       stats={loginStats}
-      subtitle="Use uma conta demo ou entre com um provedor simulado."
-      title="Acessar workspace"
+      subtitle="Explore a arquitetura do dashboard e fluxos de autenticação."
+      title="Acessar Vitrine Técnica"
     >
       <div className="surface nested-card compact-card">
         <div className="pill-row">
@@ -94,7 +94,7 @@ export default function Login() {
         {feedback.message ? <p className={`feedback ${feedback.tone}`}>{feedback.message}</p> : null}
 
         <button className="button" disabled={isSubmitting} type="submit">
-          {isSubmitting ? "Entrando..." : "Entrar"}
+          {isSubmitting ? "Entrando..." : "Entrar na Demo"}
         </button>
 
         <p className="section-copy compact auth-form-section-label">Ou continue com</p>

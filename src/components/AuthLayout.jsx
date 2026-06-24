@@ -68,13 +68,13 @@ export default function AuthLayout({
               <span className="brand-mark">{brandMark}</span>
               <span>
                 <strong>{profile.shortName}</strong>
-                <small>SaaS auth demo</small>
+                <small>Vitrine Técnica</small>
               </span>
             </Link>
             <span className="mini-pill emphasis">Portfolio</span>
           </div>
 
-          <SectionHeader description="Fluxo publico de login e workspace autenticado." eyebrow="Workspace demo" title="Auth e dashboard" />
+          <SectionHeader description="Prova de conceito de arquitetura full stack e fluxos autenticados." eyebrow="Product Proof" title="Engenharia de Produto" />
 
           <div className="auth-stat-grid">
             {stats.map((item) => (
