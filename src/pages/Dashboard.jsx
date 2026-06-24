@@ -23,28 +23,28 @@ export default function Dashboard() {
 
   const metrics = isAdminUser
     ? [
-        { label: "Sessao", value: "Ativa", detail: "Login local persistido." },
-        { label: "Perfil", value: getRoleLabel(user?.role), detail: "Permissao demo carregada." },
-        { label: "Workspace", value: user?.company || "Studio", detail: "Contexto autenticado do usuario." },
-        { label: "Stack", value: "React + auth", detail: "Fluxo pronto para portfolio." },
+        { label: "Arquitetura", value: "Full Stack", detail: "Base técnica em React, Node e MongoDB." },
+        { label: "Segurança", value: "JWT + Auth", detail: "Sessão persistente e rotas protegidas." },
+        { label: "Interface", value: "Premium", detail: "Componentização focada em UX operacional." },
+        { label: "Deploy", value: "Publicado", detail: "Ambiente real para prova de produto." },
       ]
     : [
-        { label: "Sessao", value: "Ativa", detail: "Conta autenticada com persistencia local." },
-        { label: "Conta", value: getRoleLabel(user?.role), detail: "Jornada de cliente carregada." },
-        { label: "Workspace", value: user?.company || "Cliente", detail: "Contexto da conta demo." },
-        { label: "Perfil", value: "Pronto", detail: "Dados podem ser editados na area de perfil." },
+        { label: "Modo", value: "Demonstração", detail: "Experiência guiada de produto e engenharia." },
+        { label: "Persistência", value: "Local", detail: "Dados salvos em sessão para simular sistema real." },
+        { label: "Objetivo", value: "Prova Técnica", detail: "Demonstrar domínio de CRUD e Dashboards." },
+        { label: "Status", value: "Seguro", detail: "Leitura pública sem mutação no banco real." },
       ]
 
   const quickCards = isAdminUser
     ? [
-        { title: "Jornada pronta", detail: "Login, sessao, shell e dashboard no mesmo fluxo.", to: "/dashboard" },
-        { title: "Perfil editavel", detail: "Avatar, bio, links e stack ficam salvos localmente.", to: "/perfil" },
-        { title: "Base de portfolio", detail: "Projeto pronto para virar repositorio publico separado.", to: "/perfil" },
+        { title: "Engenharia de Produto", detail: "Explore como os módulos se conectam tecnicamente.", to: "/dashboard" },
+        { title: "Vitrine de Skills", detail: "Perfil editável para mostrar domínio de estados.", to: "/perfil" },
+        { title: "Base de Portfólio", detail: "Arquitetura modular pronta para escala e manutenção.", to: "/perfil" },
       ]
     : [
-        { title: "Area pessoal", detail: "Atualize seus dados e personalize a conta demo.", to: "/perfil" },
-        { title: "Sessao persistente", detail: "Ao recarregar, o workspace continua autenticado.", to: "/dashboard" },
-        { title: "Fluxo realista", detail: "A mesma base serve para mostrar auth e shell SaaS.", to: "/perfil" },
+        { title: "Simulação de Fluxo", detail: "Entenda a lógica de um workspace autenticado.", to: "/perfil" },
+        { title: "Consistência Técnica", detail: "Mesma stack da landing até o dashboard interno.", to: "/dashboard" },
+        { title: "Foco em Solução", detail: "Prova de que o sistema resolve demandas reais.", to: "/perfil" },
       ]
 
   return (
@@ -67,8 +67,8 @@ export default function Dashboard() {
           </div>
         }
         className="hero-dashboard"
-        description="Uma demo publica de login, cadastro e workspace com cara de produto real."
-        eyebrow="SaaS auth demo"
+        description="Demonstração técnica de arquitetura Full Stack, autenticação e gestão operacional."
+        eyebrow="Prova de Produto"
         meta={
           <>
             <span className="mini-pill emphasis">Sessao local</span>
