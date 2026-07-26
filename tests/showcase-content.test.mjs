@@ -81,3 +81,19 @@ test("configuração da Vercel publica o diretório gerado pelo Vite", () => {
   assert.equal(config.outputDirectory, "dist")
   assert.equal(packageJson.engines?.node, "24.x")
 })
+
+test("interface não promove certificações ou segurança sem evidência", () => {
+  const source = [
+    read("src/components/AuthLayout.jsx"),
+    read("src/context/AuthContext.jsx"),
+    read("src/pages/Dashboard.jsx"),
+    read("src/pages/Profile.jsx"),
+  ].join("\n")
+
+  assert.doesNotMatch(source, /certifications|Certificações/u)
+  assert.doesNotMatch(
+    source,
+    /Node e MongoDB|JWT \+ Auth|Ambiente real|value: "Seguro"/u,
+  )
+  assert.match(source, /sessão simulada/iu)
+})

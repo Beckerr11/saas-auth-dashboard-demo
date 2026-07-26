@@ -87,7 +87,7 @@ async function assertLayout(page) {
 async function loginAsOwner(page) {
   await page.getByLabel("Usuario ou e-mail").fill("douglas@demo.com")
   await page.getByLabel("Senha").fill("123456")
-  await page.getByRole("button", { name: "Entrar", exact: true }).click()
+  await page.getByRole("button", { name: "Entrar na Demo", exact: true }).click()
   await page.waitForURL("**/dashboard")
   await page.getByRole("heading", { level: 1 }).waitFor()
 }
@@ -112,7 +112,7 @@ try {
 
   await desktop.getByLabel("Usuario ou e-mail").fill("douglas@demo.com")
   await desktop.getByLabel("Senha").fill("incorreta")
-  await desktop.getByRole("button", { name: "Entrar", exact: true }).click()
+  await desktop.getByRole("button", { name: "Entrar na Demo", exact: true }).click()
   await desktop.getByText("Credenciais invalidas.").waitFor()
 
   await loginAsOwner(desktop)

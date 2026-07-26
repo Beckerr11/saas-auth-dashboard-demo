@@ -23,28 +23,28 @@ export default function Dashboard() {
 
   const metrics = isAdminUser
     ? [
-        { label: "Arquitetura", value: "Full Stack", detail: "Base técnica em React, Node e MongoDB." },
-        { label: "Segurança", value: "JWT + Auth", detail: "Sessão persistente e rotas protegidas." },
+        { label: "Arquitetura", value: "Frontend", detail: "React, Router e estado local demonstrativo." },
+        { label: "Sessão", value: "Simulada", detail: "Controle de interface, sem proteção de dados reais." },
         { label: "Interface", value: "Premium", detail: "Componentização focada em UX operacional." },
-        { label: "Deploy", value: "Publicado", detail: "Ambiente real para prova de produto." },
+        { label: "Deploy", value: "Publicado", detail: "Demo estática hospedada na Vercel." },
       ]
     : [
         { label: "Modo", value: "Demonstração", detail: "Experiência guiada de produto e engenharia." },
         { label: "Persistência", value: "Local", detail: "Dados salvos em sessão para simular sistema real." },
         { label: "Objetivo", value: "Prova Técnica", detail: "Demonstrar domínio de CRUD e Dashboards." },
-        { label: "Status", value: "Seguro", detail: "Leitura pública sem mutação no banco real." },
+        { label: "Status", value: "Local", detail: "Sem banco ou autenticação real." },
       ]
 
   const quickCards = isAdminUser
     ? [
         { title: "Engenharia de Produto", detail: "Explore como os módulos se conectam tecnicamente.", to: "/dashboard" },
         { title: "Vitrine de Skills", detail: "Perfil editável para mostrar domínio de estados.", to: "/perfil" },
-        { title: "Base de Portfólio", detail: "Arquitetura modular pronta para escala e manutenção.", to: "/perfil" },
+        { title: "Base de Portfólio", detail: "Arquitetura modular preparada para evolução e manutenção.", to: "/perfil" },
       ]
     : [
         { title: "Simulação de Fluxo", detail: "Entenda a lógica de um workspace autenticado.", to: "/perfil" },
         { title: "Consistência Técnica", detail: "Mesma stack da landing até o dashboard interno.", to: "/dashboard" },
-        { title: "Foco em Solução", detail: "Prova de que o sistema resolve demandas reais.", to: "/perfil" },
+        { title: "Foco em Interface", detail: "Demonstração dos estados principais da jornada.", to: "/perfil" },
       ]
 
   return (
@@ -67,11 +67,11 @@ export default function Dashboard() {
           </div>
         }
         className="hero-dashboard"
-        description="Demonstração técnica de arquitetura Full Stack, autenticação e gestão operacional."
+        description="Demonstração técnica de frontend, sessão simulada e gestão de perfil local."
         eyebrow="Prova de Produto"
         meta={
           <>
-            <span className="mini-pill emphasis">Sessao local</span>
+            <span className="mini-pill emphasis">Sessão simulada</span>
             <span className="mini-pill">React + Router</span>
           </>
         }

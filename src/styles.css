@@ -2697,38 +2697,3 @@ a:focus-visible {
     padding: 18px;
   }
 }
-
-/* Estilos para Certificações no Perfil */
-.profile-preview-certifications {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
-}
-
-.cert-grid-mini {
-  display: grid;
-  gap: 0.75rem;
-  margin-top: 1rem;
-}
-
-.cert-card-mini {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-  padding: 1rem;
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(19, 61, 102, 0.08);
-}
-
-.cert-card-mini strong {
-  display: block;
-  font-size: 0.92rem;
-  line-height: 1.2;
-}
-
-.mini-text {
-  margin: 0.2rem 0 0;
-  font-size: 0.78rem;
-  color: var(--muted);
-}
