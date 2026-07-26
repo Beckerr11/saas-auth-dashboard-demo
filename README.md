@@ -35,8 +35,10 @@ npm run dev
 ## Scripts
 
 ```bash
+npm test
 npm run lint
 npm run build
+npm audit
 ```
 
 ## Estrutura principal
@@ -51,4 +53,18 @@ npm run build
 
 - Persistencia local via `localStorage`.
 - Nao depende da API real do produto privado.
+- Não possui backend, OAuth real ou autenticação de produção. Contas, senhas em texto simples e tokens simulados existem somente para a demo local.
 - Ideal para portfolio publico focado em auth e UX de workspace.
+
+<!-- portfolio-showcase:start -->
+## Showcase e entrevista
+
+- Showcase local: `showcase/README.md`
+- Roteiro de video: `showcase/video-script.md`
+- Lista de cenas: `showcase/scenes.md`
+- Legendas sugeridas: `showcase/captions.md`
+- Guia de entrevista: `docs/INTERVIEW_GUIDE.md`
+- Validado em 26/07/2026: testes, lint, build, auditoria de dependências e fluxo local
+- Demo: https://saas-auth-dashboard-demo.vercel.app
+- GitHub: https://github.com/Beckerr11/saas-auth-dashboard-demo
+<!-- portfolio-showcase:end -->
