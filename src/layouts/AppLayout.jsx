@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom"
+import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router"
 import IconSymbol from "../components/IconSymbol"
 import { useAuth } from "../hooks/useAuth"
 import { getRoleLabel } from "../utils/roles"

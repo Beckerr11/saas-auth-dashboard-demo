@@ -19,11 +19,6 @@ const seedUsers = [
     linkedin: "https://www.linkedin.com/in/douglassilva11",
     avatarUrl: "https://avatars.githubusercontent.com/Beckerr11?v=4",
     favoriteTechnologies: ["React", "Node.js", "MongoDB", "JWT"],
-    certifications: [
-      { title: "JavaScript Algorithms", issuer: "freeCodeCamp", year: "2024" },
-      { title: "Responsive Web Design", issuer: "freeCodeCamp", year: "2024" },
-      { title: "Foundational C#", issuer: "Microsoft", year: "2024" },
-    ],
   },
   {
     id: "user-client-001",
@@ -58,7 +53,6 @@ function sanitizeUser(user) {
     linkedin: user.linkedin || "",
     avatarUrl: user.avatarUrl || "",
     favoriteTechnologies: Array.isArray(user.favoriteTechnologies) ? user.favoriteTechnologies : [],
-    certifications: Array.isArray(user.certifications) ? user.certifications : [],
   }
 }
 

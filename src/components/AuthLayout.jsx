@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router"
 import { profile, showcaseShots } from "../data/portfolioContent"
 import IconSymbol from "./IconSymbol"
 import SectionHeader from "./ui/SectionHeader"
@@ -74,7 +74,7 @@ export default function AuthLayout({
             <span className="mini-pill emphasis">Portfolio</span>
           </div>
 
-          <SectionHeader description="Prova de conceito de arquitetura full stack e fluxos autenticados." eyebrow="Product Proof" title="Engenharia de Produto" />
+          <SectionHeader description="Prova de conceito de frontend, sessão simulada e navegação de dashboard." eyebrow="Product Proof" title="Engenharia de Interface" />
 
           <div className="auth-stat-grid">
             {stats.map((item) => (

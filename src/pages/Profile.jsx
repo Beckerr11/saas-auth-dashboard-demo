@@ -140,22 +140,6 @@ export default function Profile() {
               : [<span className="mini-pill" key="empty">Sem stack definida</span>]}
           </div>
 
-          {user?.certifications?.length > 0 && (
-            <div className="profile-preview-certifications">
-              <p className="eyebrow">Certificações Técnicas</p>
-              <div className="cert-grid-mini">
-                {user.certifications.map((cert) => (
-                  <div className="surface nested-card cert-card-mini" key={cert.title}>
-                    <IconSymbol className="icon-xs" name="approved" />
-                    <div>
-                      <strong>{cert.title}</strong>
-                      <p className="mini-text">{cert.issuer} • {cert.year}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
         </article>
       </section>
     </>
