@@ -137,6 +137,8 @@ Esses limites são deliberadamente documentados para que o estado do repositóri
 - `showcase/captions.md` — legendas sugeridas;
 - `docs/INTERVIEW_GUIDE.md` — guia para apresentação técnica do projeto.
 
+**Validado em 26/07/2026:** testes, lint, build, auditoria de dependências e fluxo local.
+
 ## Autor
 
 **Douglas Silva**  
