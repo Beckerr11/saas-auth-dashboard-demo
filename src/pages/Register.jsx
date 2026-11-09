@@ -50,12 +50,12 @@ export default function Register() {
       <form className="form-grid two-column-form auth-form-grid" onSubmit={handleSubmit}>
         <label className="field field-full">
           <span>Nome completo</span>
-          <input onChange={(event) => setForm((current) => ({ ...current, fullName: event.target.value }))} placeholder="Douglas Silva" required value={form.fullName} />
+          <input onChange={(event) => setForm((current) => ({ ...current, fullName: event.target.value }))} placeholder="Becker" required value={form.fullName} />
         </label>
 
         <label className="field">
           <span>Usuario</span>
-          <input onChange={(event) => setForm((current) => ({ ...current, username: event.target.value }))} placeholder="douglasdev" required value={form.username} />
+          <input onChange={(event) => setForm((current) => ({ ...current, username: event.target.value }))} placeholder="Becker" required value={form.username} />
         </label>
 
         <label className="field">

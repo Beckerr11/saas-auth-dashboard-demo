@@ -62,7 +62,7 @@ export default function Login() {
     >
       <div className="surface nested-card compact-card">
         <div className="pill-row">
-          <span className="mini-pill">owner: douglas@demo.com / 123456</span>
+          <span className="mini-pill">owner: becker@demo.com / 123456</span>
           <span className="mini-pill">client: cliente@demo.com / 123456</span>
         </div>
       </div>
@@ -73,7 +73,7 @@ export default function Login() {
           <input
             autoComplete="username"
             onChange={(event) => setForm((current) => ({ ...current, username: event.target.value }))}
-            placeholder="douglas@demo.com"
+            placeholder="becker@demo.com"
             required
             value={form.username}
           />

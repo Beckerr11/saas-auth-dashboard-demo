@@ -5,7 +5,7 @@
 Showcase público de uma experiência SaaS com **login, cadastro, sessão persistente, dashboard protegido por estado local e edição de perfil**.
 
 **Demo:** https://saas-auth-dashboard-demo.vercel.app  
-**Portfólio:** https://douglasdev.tech
+**Portfólio:** https://github.com/Beckerr11
 
 > Este projeto demonstra **UX e fluxo de autenticação simulada**. Não possui backend de autenticação, OAuth real, hashing de senhas ou tokens de produção e não é apresentado como um sistema de autenticação seguro para uso real.
 
@@ -27,7 +27,7 @@ Showcase público de uma experiência SaaS com **login, cadastro, sessão persis
 
 | Perfil | E-mail | Senha |
 | --- | --- | --- |
-| Owner | `douglas@demo.com` | `123456` |
+| Owner | `becker@demo.com` | `123456` |
 | Client | `cliente@demo.com` | `123456` |
 
 Essas credenciais são fictícias e existem somente dentro do showcase público.
@@ -141,5 +141,5 @@ Esses limites são deliberadamente documentados para que o estado do repositóri
 
 ## Autor
 
-**Douglas Silva**  
-[GitHub](https://github.com/Beckerr11) · [Portfólio](https://douglasdev.tech) · [LinkedIn](https://www.linkedin.com/in/douglassilva11)
+**Becker**  
+[GitHub](https://github.com/Beckerr11) · [Portfólio](https://github.com/Beckerr11) · [LinkedIn](https://github.com/Beckerr11)
